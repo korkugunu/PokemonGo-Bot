@@ -236,14 +236,14 @@ namespace PokemonGo.RocketAPI.Console
                 }
                 catch (PtcOfflineException)
                 {
-                    Logger.ColoredConsoleWrite(ConsoleColor.Red, "PTC Servers are probably down OR you credentials are wrong.", LogLevel.Error);
-                    Logger.ColoredConsoleWrite(ConsoleColor.Red, "Trying again in 20 seconds...");
+                    Logger.ColoredConsoleWrite(ConsoleColor.Red, "PTC Sunucularý sorunlu veya kimlik bilgileriniz yanlýþ.", LogLevel.Error);
+                    Logger.ColoredConsoleWrite(ConsoleColor.Red, "20 Saniye içinde tekrar denenicek...");
                     Thread.Sleep(20000);
                     new Logic.Logic(new Settings()).Execute().Wait();
                 }
                 catch (AccountNotVerifiedException)
                 {
-                    Logger.ColoredConsoleWrite(ConsoleColor.Red, "Your PTC Account is not activated. Exiting in 10 Seconds.");
+                    Logger.ColoredConsoleWrite(ConsoleColor.Red, "PTC Hesabýnýz aktif deðil. 10 Saniye içinde çýkýþ yapýlacak.");
                     Thread.Sleep(10000);
                     Environment.Exit(0);
                 }
@@ -251,7 +251,7 @@ namespace PokemonGo.RocketAPI.Console
                 catch (Exception ex)
                 {
                     Logger.ColoredConsoleWrite(ConsoleColor.Red, $"Unhandled exception: {ex}", LogLevel.Error);
-                    Logger.Error("Restarting in 20 Seconds.");
+                    Logger.Error("20 Saniye sonra yeniden baþlatýlacak.");
                     Thread.Sleep(200000);
                     new Logic.Logic(new Settings()).Execute().Wait();
                 }
@@ -283,14 +283,14 @@ namespace PokemonGo.RocketAPI.Console
                     return;
                 }
 
-                Logger.ColoredConsoleWrite(ConsoleColor.Red, "There is a new Version available: " + gitVersion);
-                Logger.ColoredConsoleWrite(ConsoleColor.Red, "Its recommended to use the newest Version.");
-                Logger.ColoredConsoleWrite(ConsoleColor.Red, "Starting in 10 Seconds.");
+                Logger.ColoredConsoleWrite(ConsoleColor.Red, "Yeni versiyon çýkýþ yapmýþ: " + gitVersion);
+                Logger.ColoredConsoleWrite(ConsoleColor.Red, "Yeni sürümünü kullanmanýzý tavsiye ediyoruz.");
+                Logger.ColoredConsoleWrite(ConsoleColor.Red, "10 Saniye içinde baþlatýlacak.");
                 Thread.Sleep(10000);
             }
             catch (Exception)
             {
-                Logger.ColoredConsoleWrite(ConsoleColor.White, "Unable to check for updates now...");
+                Logger.ColoredConsoleWrite(ConsoleColor.White, "Güncellemeleri þu anda kontrol edemiyor...");
             }
         }
 
@@ -328,7 +328,7 @@ namespace PokemonGo.RocketAPI.Console
             using (var wC = new WebClient())
                 return
                     wC.DownloadString(
-                        "https://raw.githubusercontent.com/Ar1i/PokemonGo-Bot/master/PokemonGo.RocketAPI.Console/Properties/AssemblyInfo.cs");
+                        "https://raw.githubusercontent.com/korkugunu/PokemonGo-Bot/master/PokemonGo.RocketAPI.Console/Properties/AssemblyInfo.cs");
         }
     }
     public static class Globals

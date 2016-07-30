@@ -47,7 +47,7 @@ namespace PokemonGo.RocketAPI.Console
         private async void Execute()
         {
             EnabledButton(false);
-            textBox1.Text = "Reloading Pokemon list.";
+            textBox1.Text = "Pokemon Listesi Yenileniyor.";
 
             client = new Client(ClientSettings);
 
@@ -125,7 +125,7 @@ namespace PokemonGo.RocketAPI.Console
 
                     listView1.Items.Add(listViewItem);
                 }
-                Text = "Pokemon List | User: " + profile.Profile.Username + " | Pokemons: " + pokemons.Count() + "/" + profile.Profile.PokeStorage;
+                Text = "Pokemon Listesi | Kullanıcı: " + profile.Profile.Username + " | Pokemonlar: " + pokemons.Count() + "/" + profile.Profile.PokeStorage;
                 EnabledButton(true);
 
                 textBox1.Text = string.Empty;
@@ -202,7 +202,7 @@ namespace PokemonGo.RocketAPI.Console
                 {
                     if (listView1.SelectedItems.Count > 1)
                     {
-                        MessageBox.Show("You can only select 1 item for quick action!", "Selection to large", MessageBoxButtons.OK);
+                        MessageBox.Show("Hızlı eylem için 1 adet seçim yapabilirsin!", "Seçilen Bilgi", MessageBoxButtons.OK);
                         return;
                     }
                     contextMenuStrip1.Show(Cursor.Position);
@@ -215,7 +215,7 @@ namespace PokemonGo.RocketAPI.Console
             var pokemon = (PokemonData)listView1.SelectedItems[0].Tag;
             taskResponse resp = new taskResponse(false, string.Empty);
 
-            if (MessageBox.Show(this, pokemon.PokemonId + " with " + pokemon.Cp + " CP thats " + Math.Round(Perfect(pokemon)) + "% perfect", "Are you sure you want to transfer?", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            if (MessageBox.Show(this, pokemon.PokemonId + " " + pokemon.Cp + " CP " + Math.Round(Perfect(pokemon)) + "% IV Değerinde", "Transfer Etmeye Eminmisin?", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
                 resp = await transferPokemon(pokemon);
             }
@@ -226,10 +226,10 @@ namespace PokemonGo.RocketAPI.Console
             if (resp.Status)
             {
                 listView1.Items.Remove(listView1.SelectedItems[0]);
-                Text = "Pokemon List | User: " + profile.Profile.Username + " | Pokemons: " + listView1.Items.Count + "/" + profile.Profile.PokeStorage;
+                Text = "Pokemon Listesi | Kullanıcı: " + profile.Profile.Username + " | Pokemonlar: " + listView1.Items.Count + "/" + profile.Profile.PokeStorage;
             }
             else
-                MessageBox.Show(resp.Message +" transfer failed!", "Transfer Status", MessageBoxButtons.OK);
+                MessageBox.Show(resp.Message +" Transfer Başarısız!", "Transfer Durum", MessageBoxButtons.OK);
         }
 
         private async void button2_Click(object sender, EventArgs e)

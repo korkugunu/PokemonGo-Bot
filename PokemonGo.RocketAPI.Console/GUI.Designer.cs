@@ -104,13 +104,12 @@
             this.textBox18 = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.checkBox11 = new System.Windows.Forms.CheckBox();
             this.checkBox10 = new System.Windows.Forms.CheckBox();
             this.checkBox9 = new System.Windows.Forms.CheckBox();
             this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -128,9 +127,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(6, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 13);
+            this.label1.Size = new System.Drawing.Size(74, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Account type:";
+            this.label1.Text = "Kullanıcı Türü:";
             // 
             // comboBox1
             // 
@@ -162,9 +161,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(6, 69);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 13);
+            this.label3.Size = new System.Drawing.Size(31, 13);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Password";
+            this.label3.Text = "Şifre:";
             // 
             // textBox2
             // 
@@ -187,7 +186,7 @@
             this.groupBox1.Size = new System.Drawing.Size(252, 97);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Account Info";
+            this.groupBox1.Text = "Kullanıcı Ayarları";
             // 
             // groupBox2
             // 
@@ -210,7 +209,7 @@
             this.groupBox2.Size = new System.Drawing.Size(252, 173);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Location Settings";
+            this.groupBox2.Text = "Konum Ayarları";
             // 
             // button2
             // 
@@ -219,7 +218,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(62, 74);
             this.button2.TabIndex = 15;
-            this.button2.Text = "Set Location";
+            this.button2.Text = "Konum Belirle";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -230,25 +229,25 @@
             this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox1.Location = new System.Drawing.Point(4, 148);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(171, 17);
+            this.checkBox1.Size = new System.Drawing.Size(158, 17);
             this.checkBox1.TabIndex = 14;
-            this.checkBox1.Text = "Start walk from default location";
+            this.checkBox1.Text = "Varsayılan konumdan başlat";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(187, 124);
+            this.label10.Location = new System.Drawing.Point(187, 127);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(38, 13);
+            this.label10.Size = new System.Drawing.Size(33, 13);
             this.label10.TabIndex = 11;
-            this.label10.Text = "meters";
+            this.label10.Text = "metre";
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(81, 121);
+            this.textBox7.Location = new System.Drawing.Point(101, 120);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
+            this.textBox7.Size = new System.Drawing.Size(80, 20);
             this.textBox7.TabIndex = 10;
             this.textBox7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox7_KeyPress);
             // 
@@ -257,9 +256,9 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(7, 124);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(68, 13);
+            this.label9.Size = new System.Drawing.Size(89, 13);
             this.label9.TabIndex = 9;
-            this.label9.Text = "Move radius:";
+            this.label9.Text = "Hareket Yarıçapı:";
             // 
             // label8
             // 
@@ -275,9 +274,9 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(7, 98);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(41, 13);
+            this.label7.Size = new System.Drawing.Size(25, 13);
             this.label7.TabIndex = 7;
-            this.label7.Text = "Speed:";
+            this.label7.Text = "Hız:";
             // 
             // textBox6
             // 
@@ -292,9 +291,9 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(7, 72);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(45, 13);
+            this.label6.Size = new System.Drawing.Size(40, 13);
             this.label6.TabIndex = 5;
-            this.label6.Text = "Altitude:";
+            this.label6.Text = "Rakım:";
             // 
             // textBox5
             // 
@@ -319,9 +318,9 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(7, 46);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 13);
+            this.label5.Size = new System.Drawing.Size(44, 13);
             this.label5.TabIndex = 2;
-            this.label5.Text = "Longitude:";
+            this.label5.Text = "Boylam:";
             // 
             // textBox3
             // 
@@ -337,9 +336,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(7, 20);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 13);
+            this.label4.Size = new System.Drawing.Size(39, 13);
             this.label4.TabIndex = 0;
-            this.label4.Text = "Latitude:";
+            this.label4.Text = "Enlem:";
             // 
             // groupBox3
             // 
@@ -356,12 +355,12 @@
             this.groupBox3.Size = new System.Drawing.Size(252, 120);
             this.groupBox3.TabIndex = 8;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Bot Settings";
+            this.groupBox3.Text = "Bot Ayarları";
             // 
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(169, 98);
+            this.label29.Location = new System.Drawing.Point(205, 98);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(15, 13);
             this.label29.TabIndex = 8;
@@ -369,7 +368,7 @@
             // 
             // textBox24
             // 
-            this.textBox24.Location = new System.Drawing.Point(110, 95);
+            this.textBox24.Location = new System.Drawing.Point(141, 95);
             this.textBox24.Name = "textBox24";
             this.textBox24.Size = new System.Drawing.Size(53, 20);
             this.textBox24.TabIndex = 7;
@@ -380,15 +379,15 @@
             this.label28.AutoSize = true;
             this.label28.Location = new System.Drawing.Point(7, 98);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(93, 13);
+            this.label28.Size = new System.Drawing.Size(115, 13);
             this.label28.TabIndex = 6;
-            this.label28.Text = "Max IV to transfer:";
+            this.label28.Text = "Maksimum IV Transfer:";
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(110, 69);
+            this.textBox9.Location = new System.Drawing.Point(141, 69);
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(71, 20);
+            this.textBox9.Size = new System.Drawing.Size(79, 20);
             this.textBox9.TabIndex = 5;
             this.textBox9.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox7_KeyPress);
             // 
@@ -397,15 +396,15 @@
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(7, 72);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(97, 13);
+            this.label12.Size = new System.Drawing.Size(119, 13);
             this.label12.TabIndex = 4;
-            this.label12.Text = "Max CP to transfer:";
+            this.label12.Text = "Maksimum CP Transfer:";
             // 
             // textBox8
             // 
             this.textBox8.Location = new System.Drawing.Point(141, 41);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(40, 20);
+            this.textBox8.Size = new System.Drawing.Size(79, 20);
             this.textBox8.TabIndex = 3;
             this.textBox8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox7_KeyPress);
             // 
@@ -414,9 +413,9 @@
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(7, 44);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(129, 13);
+            this.label11.Size = new System.Drawing.Size(108, 13);
             this.label11.TabIndex = 2;
-            this.label11.Text = "Max duplicate Pokemons:";
+            this.label11.Text = "Maksimum Pokemon:";
             // 
             // checkBox2
             // 
@@ -425,9 +424,9 @@
             this.checkBox2.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox2.Location = new System.Drawing.Point(7, 20);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(174, 17);
+            this.checkBox2.Size = new System.Drawing.Size(181, 17);
             this.checkBox2.TabIndex = 0;
-            this.checkBox2.Text = "Auto transfer double Pokemons";
+            this.checkBox2.Text = "Fazla Pokemonları Transfer Etme";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // checkBox3
@@ -435,11 +434,11 @@
             this.checkBox3.AutoSize = true;
             this.checkBox3.Checked = true;
             this.checkBox3.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox3.Location = new System.Drawing.Point(6, 87);
+            this.checkBox3.Location = new System.Drawing.Point(6, 110);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(159, 30);
+            this.checkBox3.Size = new System.Drawing.Size(143, 30);
             this.checkBox3.TabIndex = 1;
-            this.checkBox3.Text = "Evolve Pokemons if enough\r\ncandy\r\n";
+            this.checkBox3.Text = "Şekeri olan Pokemonları \r\nEvolve Et";
             this.checkBox3.UseVisualStyleBackColor = true;
             // 
             // checkBox7
@@ -449,9 +448,9 @@
             this.checkBox7.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox7.Location = new System.Drawing.Point(6, 19);
             this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(144, 17);
+            this.checkBox7.Size = new System.Drawing.Size(157, 30);
             this.checkBox7.TabIndex = 6;
-            this.checkBox7.Text = "Use LuckyEgg at Evolve";
+            this.checkBox7.Text = "Evolve yaparken LuckyEgg\r\nKullan";
             this.checkBox7.UseVisualStyleBackColor = true;
             this.checkBox7.CheckedChanged += new System.EventHandler(this.checkBox7_CheckedChanged_1);
             // 
@@ -484,7 +483,7 @@
             this.groupBox4.Size = new System.Drawing.Size(172, 301);
             this.groupBox4.TabIndex = 9;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Pokemon Items";
+            this.groupBox4.Text = "Pokemon İtemleri";
             // 
             // label27
             // 
@@ -676,19 +675,19 @@
             this.groupBox5.Controls.Add(this.checkedListBox1);
             this.groupBox5.Location = new System.Drawing.Point(448, 12);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(172, 170);
+            this.groupBox5.Size = new System.Drawing.Size(190, 170);
             this.groupBox5.TabIndex = 10;
             this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Pokemons to not transfer";
+            this.groupBox5.Text = "Transfer Edilmeyecek Pokemonlar";
             // 
             // checkBox4
             // 
             this.checkBox4.AutoSize = true;
             this.checkBox4.Location = new System.Drawing.Point(10, 149);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(69, 17);
+            this.checkBox4.Size = new System.Drawing.Size(83, 17);
             this.checkBox4.TabIndex = 1;
-            this.checkBox4.Text = "Select all";
+            this.checkBox4.Text = "Hepsini Seç";
             this.checkBox4.UseVisualStyleBackColor = true;
             this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
             // 
@@ -699,7 +698,7 @@
             this.checkedListBox1.Location = new System.Drawing.Point(10, 19);
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.ScrollAlwaysVisible = true;
-            this.checkedListBox1.Size = new System.Drawing.Size(150, 124);
+            this.checkedListBox1.Size = new System.Drawing.Size(174, 124);
             this.checkedListBox1.TabIndex = 0;
             // 
             // groupBox6
@@ -708,19 +707,19 @@
             this.groupBox6.Controls.Add(this.checkedListBox2);
             this.groupBox6.Location = new System.Drawing.Point(448, 188);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(172, 170);
+            this.groupBox6.Size = new System.Drawing.Size(190, 170);
             this.groupBox6.TabIndex = 11;
             this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Pokemons to not catch";
+            this.groupBox6.Text = "Yakalanmıyacak Pokemonlar";
             // 
             // checkBox5
             // 
             this.checkBox5.AutoSize = true;
             this.checkBox5.Location = new System.Drawing.Point(6, 149);
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(69, 17);
+            this.checkBox5.Size = new System.Drawing.Size(83, 17);
             this.checkBox5.TabIndex = 1;
-            this.checkBox5.Text = "Select all";
+            this.checkBox5.Text = "Hepsini Seç";
             this.checkBox5.UseVisualStyleBackColor = true;
             this.checkBox5.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
             // 
@@ -731,7 +730,7 @@
             this.checkedListBox2.Location = new System.Drawing.Point(6, 19);
             this.checkedListBox2.Name = "checkedListBox2";
             this.checkedListBox2.ScrollAlwaysVisible = true;
-            this.checkedListBox2.Size = new System.Drawing.Size(154, 124);
+            this.checkedListBox2.Size = new System.Drawing.Size(178, 124);
             this.checkedListBox2.TabIndex = 0;
             // 
             // groupBox7
@@ -740,19 +739,19 @@
             this.groupBox7.Controls.Add(this.checkedListBox3);
             this.groupBox7.Location = new System.Drawing.Point(449, 364);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(171, 171);
+            this.groupBox7.Size = new System.Drawing.Size(189, 171);
             this.groupBox7.TabIndex = 12;
             this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Pokemons to evolve";
+            this.groupBox7.Text = "Evolve Edilecek Pokemonlar";
             // 
             // checkBox6
             // 
             this.checkBox6.AutoSize = true;
             this.checkBox6.Location = new System.Drawing.Point(6, 147);
             this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(69, 17);
+            this.checkBox6.Size = new System.Drawing.Size(83, 17);
             this.checkBox6.TabIndex = 1;
-            this.checkBox6.Text = "Select all";
+            this.checkBox6.Text = "Hepsini Seç";
             this.checkBox6.UseVisualStyleBackColor = true;
             this.checkBox6.CheckedChanged += new System.EventHandler(this.checkBox6_CheckedChanged);
             // 
@@ -763,7 +762,7 @@
             this.checkedListBox3.Location = new System.Drawing.Point(6, 17);
             this.checkedListBox3.Name = "checkedListBox3";
             this.checkedListBox3.ScrollAlwaysVisible = true;
-            this.checkedListBox3.Size = new System.Drawing.Size(153, 124);
+            this.checkedListBox3.Size = new System.Drawing.Size(177, 124);
             this.checkedListBox3.TabIndex = 0;
             // 
             // button1
@@ -773,7 +772,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(349, 23);
             this.button1.TabIndex = 13;
-            this.button1.Text = "Save Configuration";
+            this.button1.Text = "Ayarları Kaydet";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -791,12 +790,12 @@
             this.groupBox8.Size = new System.Drawing.Size(252, 93);
             this.groupBox8.TabIndex = 14;
             this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "Telegram Settings";
+            this.groupBox8.Text = "Telegram Ayarları (Şart Değil)";
             // 
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(187, 68);
+            this.label24.Location = new System.Drawing.Point(201, 68);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(40, 13);
             this.label24.TabIndex = 6;
@@ -807,15 +806,15 @@
             this.label23.AutoSize = true;
             this.label23.Location = new System.Drawing.Point(7, 68);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(80, 13);
+            this.label23.Size = new System.Drawing.Size(126, 13);
             this.label23.TabIndex = 5;
-            this.label23.Text = "Live stats delay";
+            this.label23.Text = "Canlı İstatistik Gecikmesi:";
             // 
             // textBox20
             // 
-            this.textBox20.Location = new System.Drawing.Point(110, 65);
+            this.textBox20.Location = new System.Drawing.Point(139, 64);
             this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(71, 20);
+            this.textBox20.Size = new System.Drawing.Size(56, 20);
             this.textBox20.TabIndex = 4;
             this.textBox20.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox7_KeyPress);
             // 
@@ -831,9 +830,9 @@
             this.label22.AutoSize = true;
             this.label22.Location = new System.Drawing.Point(7, 42);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(35, 13);
+            this.label22.Size = new System.Drawing.Size(28, 13);
             this.label22.TabIndex = 2;
-            this.label22.Text = "Name";
+            this.label22.Text = "İsim:";
             // 
             // textBox18
             // 
@@ -847,9 +846,9 @@
             this.label21.AutoSize = true;
             this.label21.Location = new System.Drawing.Point(7, 16);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(54, 13);
+            this.label21.Size = new System.Drawing.Size(61, 13);
             this.label21.TabIndex = 0;
-            this.label21.Text = "API token";
+            this.label21.Text = "API Token:";
             // 
             // linkLabel1
             // 
@@ -862,27 +861,15 @@
             this.linkLabel1.Text = "Github";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
-            // linkLabel2
-            // 
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(90, 21);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(110, 13);
-            this.linkLabel2.TabIndex = 16;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "HighMinded (Support)";
-            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
-            // 
             // groupBox9
             // 
             this.groupBox9.Controls.Add(this.linkLabel1);
-            this.groupBox9.Controls.Add(this.linkLabel2);
             this.groupBox9.Location = new System.Drawing.Point(13, 520);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Size = new System.Drawing.Size(252, 44);
             this.groupBox9.TabIndex = 18;
             this.groupBox9.TabStop = false;
-            this.groupBox9.Text = "Version Info";
+            this.groupBox9.Text = "Versiyon Bilgi";
             // 
             // groupBox10
             // 
@@ -897,18 +884,31 @@
             this.groupBox10.Size = new System.Drawing.Size(172, 216);
             this.groupBox10.TabIndex = 19;
             this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "Other Settings";
+            this.groupBox10.Text = "Diğer Ayarlar";
+            // 
+            // checkBox11
+            // 
+            this.checkBox11.AutoSize = true;
+            this.checkBox11.Checked = true;
+            this.checkBox11.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox11.Location = new System.Drawing.Point(6, 170);
+            this.checkBox11.Name = "checkBox11";
+            this.checkBox11.Size = new System.Drawing.Size(141, 30);
+            this.checkBox11.TabIndex = 10;
+            this.checkBox11.Text = "Evolve için pokemonları \r\nElinde tut";
+            this.checkBox11.UseVisualStyleBackColor = true;
+            this.checkBox11.CheckedChanged += new System.EventHandler(this.checkBox11_CheckedChanged);
             // 
             // checkBox10
             // 
             this.checkBox10.AutoSize = true;
             this.checkBox10.Checked = true;
             this.checkBox10.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox10.Location = new System.Drawing.Point(6, 123);
+            this.checkBox10.Location = new System.Drawing.Point(6, 146);
             this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(144, 17);
+            this.checkBox10.Size = new System.Drawing.Size(133, 17);
             this.checkBox10.TabIndex = 9;
-            this.checkBox10.Text = "Enable Pokemon list GUI";
+            this.checkBox10.Text = "Pokemon Menü Listesi";
             this.checkBox10.UseVisualStyleBackColor = true;
             // 
             // checkBox9
@@ -916,42 +916,29 @@
             this.checkBox9.AutoSize = true;
             this.checkBox9.Checked = true;
             this.checkBox9.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox9.Location = new System.Drawing.Point(6, 64);
+            this.checkBox9.Location = new System.Drawing.Point(6, 74);
             this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(146, 17);
+            this.checkBox9.Size = new System.Drawing.Size(145, 30);
             this.checkBox9.TabIndex = 8;
-            this.checkBox9.Text = "Use Incense every 30min";
+            this.checkBox9.Text = "30 Dakikada bir Incense \r\nKullan";
             this.checkBox9.UseVisualStyleBackColor = true;
             // 
             // checkBox8
             // 
             this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(6, 43);
+            this.checkBox8.Location = new System.Drawing.Point(6, 51);
             this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(145, 17);
+            this.checkBox8.Size = new System.Drawing.Size(137, 17);
             this.checkBox8.TabIndex = 7;
-            this.checkBox8.Text = "German Pokemon names";
+            this.checkBox8.Text = "Alman Pokemon İsimleri";
             this.checkBox8.UseVisualStyleBackColor = true;
             this.checkBox8.CheckedChanged += new System.EventHandler(this.checkBox8_CheckedChanged);
-            // 
-            // checkBox11
-            // 
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.Checked = true;
-            this.checkBox11.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox11.Location = new System.Drawing.Point(6, 146);
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(156, 30);
-            this.checkBox11.TabIndex = 10;
-            this.checkBox11.Text = "Keep Pokemons which can\r\nbe evolved";
-            this.checkBox11.UseVisualStyleBackColor = true;
-            this.checkBox11.CheckedChanged += new System.EventHandler(this.checkBox11_CheckedChanged);
             // 
             // GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(626, 571);
+            this.ClientSize = new System.Drawing.Size(646, 571);
             this.Controls.Add(this.groupBox10);
             this.Controls.Add(this.groupBox9);
             this.Controls.Add(this.groupBox6);
@@ -967,7 +954,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "GUI";
-            this.Text = "PokeGoBot GUI Edition | Gui by GreenGold |";
+            this.Text = "PokeGoBot GUI Edition | Gui by GreenGold | Translated by Korkugunu |";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.GUI_FormClosing);
             this.Load += new System.EventHandler(this.GUI_Load);
             this.groupBox1.ResumeLayout(false);
@@ -1066,7 +1053,6 @@
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.TextBox textBox23;
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.LinkLabel linkLabel2;
         private System.Windows.Forms.CheckBox checkBox7;
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.GroupBox groupBox10;

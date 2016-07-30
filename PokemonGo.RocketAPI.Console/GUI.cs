@@ -31,7 +31,7 @@ namespace PokemonGo.RocketAPI.Console
             Globals.acc = comboBox1.SelectedIndex == 0 ? Enums.AuthType.Google : Enums.AuthType.Ptc;
             if (comboBox1.SelectedIndex == 0)
             {
-                label2.Text = "E-mail:";
+                label2.Text = "E-Mail:";
             //    textBox1.Hide();
             //    label2.Hide();
             //    textBox2.Hide();
@@ -39,7 +39,7 @@ namespace PokemonGo.RocketAPI.Console
             }
             else
             {
-                label2.Text = "Username:";
+                label2.Text = "Kullanýcý Adý:";
             //    textBox1.Show();
             //    label2.Show();
             //    textBox2.Show();
@@ -54,13 +54,13 @@ namespace PokemonGo.RocketAPI.Console
             System.IO.Directory.CreateDirectory(Program.path); 
 
             // Version Infoooo
-            groupBox9.Text = "Your Version: " + Assembly.GetExecutingAssembly().GetName().Version + " | Newest: " + Program.getNewestVersion();
+            groupBox9.Text = "Versiyon: " + Assembly.GetExecutingAssembly().GetName().Version + " | Yeni Versiyon: " + Program.getNewestVersion();
             if (Program.getNewestVersion() > Assembly.GetExecutingAssembly().GetName().Version)
             { 
-                DialogResult dialogResult = MessageBox.Show("There is an Update on Github. do you want to open it ?", "Newest Version: " + Program.getNewestVersion(), MessageBoxButtons.YesNo);
+                DialogResult dialogResult = MessageBox.Show("Þu anda uygulamaya güncelleþtirme geldi. Ýndirmek istermisin ?", "Yeni Versiyon: " + Program.getNewestVersion(), MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
                 {
-                    Process.Start("https://github.com/Ar1i/PokemonGo-Bot");
+                    Process.Start("https://github.com/korkugunu/PokemonGo-Bot");
                 }
                 else if (dialogResult == DialogResult.No)
                 {
@@ -693,7 +693,7 @@ namespace PokemonGo.RocketAPI.Console
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start("https://github.com/Ar1i/PokemonGo-Bot");
+            Process.Start("https://github.com/korkugunu/PokemonGo-Bot");
         }
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
